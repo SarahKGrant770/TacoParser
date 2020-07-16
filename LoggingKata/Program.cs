@@ -62,9 +62,9 @@ namespace LoggingKata
                         distance = CordA.GetDistanceTo(CordB);
                         if (distance > maxDistance)
                         {
-                            p1 = locA;
-                            p2 = locB;
-                            maxDistance = distance;
+                         p1 = locA;
+                         p2 = locB;
+                         maxDistance = distance;
                         }
                     }
                 
@@ -73,7 +73,8 @@ namespace LoggingKata
 
             double inMiles = 0.000621371 * maxDistance;
             logger.LogInfo("Converting answer to miles....");
-            Console.WriteLine(p1.Name + "is " + Math.Ceiling(inMiles) + " miles from " + p2.Name);
+
+            Console.WriteLine($"{p1.Name} + is + {Math.Floor(inMiles)} +  miles from  + {p2.Name}");
 
 
 
