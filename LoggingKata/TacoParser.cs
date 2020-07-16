@@ -24,7 +24,7 @@ namespace LoggingKata
             var cells = line.Split(',');
 
             // If your array.Length is less than 3, something went wrong
-            if (cells.Length < 3)
+            if (cells.Length != 3 || cells == null)
             {
                 // Log that and return null
                 // Do not fail if one record parsing fails, return null

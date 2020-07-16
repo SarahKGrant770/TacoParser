@@ -69,9 +69,11 @@ namespace LoggingKata
                     }
                 
             }
+            logger.LogInfo("Determinig greatest distance!");
 
             double inMiles = 0.000621371 * maxDistance;
-            logger.LogInfo($"Location A {p1.Name} Location B {p2.Name} Distance {inMiles}");
+            logger.LogInfo("Converting answer to miles....");
+            Console.WriteLine(p1.Name + "is " + Math.Ceiling(inMiles) + " miles from " + p2.Name);
 
 
 
